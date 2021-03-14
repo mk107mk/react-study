@@ -3,6 +3,7 @@ import styled, {createGlobalStyle} from 'styled-components';
 import {Route, Switch} from 'react-router-dom';
 import Home from "./view/pages/Home";
 import Header from "./view/components/Header";
+import SideBar from "./view/components/SideBar";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -23,6 +24,7 @@ const App = () => {
         <Container>
             <GlobalStyle/>
             <Header/>
+            <SideBar/>
             <Switch>
                 <Route path={"/"} component={Home}/>
             </Switch>
